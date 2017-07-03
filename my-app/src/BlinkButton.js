@@ -1,10 +1,10 @@
 import React from 'react';
 
-var ws = new WebSocket('ws://192.168.1.16:3939/public');
+var ws = new WebSocket('ws://192.168.1.17:3939/public');
 
 ws.onopen = () => {
   // connection opened
-  ws.send('something'); // send a message
+  ws.send('blink'); // send a message
 };
 
 ws.onmessage = (e) => {
